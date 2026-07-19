@@ -1,0 +1,10 @@
+{
+  "name": "task-tracker",
+  "version": "1.0.0",
+  "description": "Internal task tracker with Kanban, RBAC, and brand book styling",
+  "scripts": {
+    "start": "node backend/server.js",
+    "postinstall": "cd backend && npm install"
+  },
+  "dependencies": {}
+}

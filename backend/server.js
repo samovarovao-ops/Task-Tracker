@@ -8,8 +8,8 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const PORT = 3001;
-const JWT_SECRET = 'task-tracker-secret-key-2024';
+const PORT = process.env.PORT || 3001;
+const JWT_SECRET = process.env.JWT_SECRET || 'task-tracker-secret-key-2024';
 const DB_PATH = path.join(__dirname, 'data', 'tracker.db');
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
 

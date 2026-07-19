@@ -1,6 +1,6 @@
 const { useState, useEffect, useRef, useCallback, createContext, useContext } = React;
 
-const API = 'http://localhost:3001';
+const API = window.location.origin;
 
 // ========== API HELPER ==========
 function api(path, opts = {}) {
